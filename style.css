@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "SDGothicNeobTTF-dMd";
+}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+/* 해더 만들기 */
+header{
+    width: 100%;
+    height: 84px;
+    box-sizing: border-box;
+    padding: 0 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: fixed;
+    z-index: 99;
+
+}
+/* 해더 그림자 생성 */
+#BG{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    z-index: 9;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.461),rgba(230, 230, 230, 0));
+}
+/* 이미지 위치 조절 */
+header .logo{
+    margin-right: 100px;
+}
+/* 메뉴바 만들기 */
+header > ul{
+    display: flex;
+}
+header > .menubar > li{
+    width: 250px;
+    text-align: center;
+    position: relative;
+}
+header > .menubar > li > a{
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.5s;
+    
+}
+/* 로그인 메뉴바 만들기 */
+header > .sidebar > li > a{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    margin: 0 6px;
+    transition: 0.5s;
+}
+/* 호버 효과 */
+header >  ul > li > a:hover {
+    color: #ff671d;
+}
+/* 서브메뉴바 */
+#menu-bg{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: white;
+    display: none;
+}
+.sub-menu{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    display: none;
+}
+.sub-menu >li > a{
+    display: inline-block;
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+/* 호버 효과 */
+.sub-menu  a:hover{
+    text-decoration: underline;
+    color: #ff671d;
+}

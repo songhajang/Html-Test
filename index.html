@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한민국 NO.1 아파트 e편한세상</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script>
+        let MenuLst = $('.list')
+            let Sub = $('.sub-menu')
+            let SubBG = $('#menu-bg')
+
+        MenuLst.on("mouseover",function(){
+            SubBG.css('display','block')
+            Sub.css('display','block')
+        })
+        SubBG.mouseout(function(){
+            SubBG.css('display','none')
+            Sub.css('display','none')
+        })
+    </script>
+</head>
+<body>
+    <div id="BG">
+        <div id="menu-bg"></div>
+        <header>
+            <a href="#" class="logo"><img src="./img/logo.png" alt="logo"></a>
+            
+            <ul class="menubar">
+                <li class="list">
+                    <a href="#">브랜드</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">상품</a></li>
+                            <li><a href="#">기술</a></li>
+                            <li><a href="#">브랜드 뉴스</a></li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <a href="#">분양</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">연간 분양 일정</a></li>
+                            <li><a href="#">e편한세상 시티 풍무역</a></li>
+                            <li><a href="#">e편한세상 옥정 리더스가든</a></li>
+                            <li><a href="#">e편한세상 시티 항동 마리나</a></li>
+                            <li><a href="#">e편한세상 지축 센텀가든</a></li>
+                            <li><a href="#">e편한세상 시티고객</a></li>
+                            <li><a href="#">e편한세상 에코델타 센터포인트</a></li>
+                            <li><a href="#">e편한세상 원주 프로모원</a></li>
+                            <li><a href="#">e편한세상 탕정 퍼스트드림</a></li>
+                            <li><a href="#">근린생활시설(단지내상가)</a></li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <a href="#">마이홈</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">종합정보</a></li>
+                            <li><a href="#">분양대금</a></li>
+                            <li><a href="#">남부 조회</a></li>
+                            <li><a href="#">입주자 사전방문행사 예약</a></li>
+                            <li><a href="#">입주 예약</a></li>
+                            <li><a href="#">A/S 신청</a></li>
+                            <li><a href="#">eLife 가이드</a></li>
+                            <li><a href="#">환기 필터 케어</a></li>
+                            <li><a href="#">단지 소식</a></li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <a href="#">드림하우스 갤러리</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">드림하우스 in 서울</a></li>
+                            <li><a href="#">드림하우스 in 부산</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        
+                <ul class="sidebar">
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">퍼스트스테이</a>
+                    </li>
+                    <li>
+                        <a href="#">e편한세상 찾기</a>
+                    </li>
+                </ul>
+                
+            </header>
+    </div>
+    <div id="vdo">
+        <video  preload="auto" autoplay="true" loop="loop" muted="muted" src="https://elife.co.kr/common/front/images/main/daelim_new.mp4">
+        <source src="https://elife.co.kr/common/front/images/main/daelim_new.mp4">
+        </video>
+    </div>
+</body>
+</html>
