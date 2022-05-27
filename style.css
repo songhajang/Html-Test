@@ -4,7 +4,7 @@
     font-family: "SDGothicNeobTTF-dMd";
 }
 ul,li{list-style: none;}
-a{text-decoration: none;}
+a{text-decoration: none;color: white;}
 
 /* 해더 만들기 */
 header{
@@ -43,7 +43,6 @@ header > .menubar > li{
     position: relative;
 }
 header > .menubar > li > a{
-    color: rgb(255, 255, 255);
     font-size: 19px;
     font-weight: bold;
     transition: 0.5s;
@@ -51,12 +50,65 @@ header > .menubar > li > a{
 }
 /* 로그인 메뉴바 만들기 */
 header > .sidebar > li > a{
-    color: rgb(255, 255, 255);
     font-size: 13px;
     margin: 0 6px;
     transition: 0.5s;
 }
+.BColor{
+    color: black;
+}
+.WColor{
+    color: white;
+}
 /* 호버 효과 */
-header >  ul > li > a:hover {
+header ul a:hover {
     color: #ff671d;
+}
+h1{
+    margin: 150px 0 100px;
+    text-align: center;
+}
+/* 메인 */
+.main{
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: space-evenly;
+}
+/* 컨텐츠 */
+.main .item{
+    width: 500px;
+    height: 450px;
+    box-sizing: border-box;
+    margin: 50px 0;
+    display: inline-block;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center ;
+    transition: all 0.5s;
+}
+.item:nth-child(1){
+    background-image: url(./img/썸네일.jpg\ \(1\).jpg);
+}
+.item:nth-child(2){
+    background-image: url(./img/썸네일2.png);
+}
+.item:nth-child(3){
+    background-image: url(./img/썸네일3.png);
+}
+.item:nth-child(4){
+    background-image: url(./img/썸네일4.png);
+}
+.item:nth-child(5){
+    background-image: url(./img/썸네일5.png);
+}
+.item:nth-child(6){
+    background-image: url(./img/썸네일6.png);
+}
+.item:hover{
+    box-shadow: 0 10px 10px 10px gray;
+    margin-top: -1px;
 }

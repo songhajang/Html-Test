@@ -1,50 +1,82 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>대한민국 NO.1 아파트 e편한세상</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 1) {
+                    $("header").css("background", "#fff");
+                    $("a").addClass("BColor");
+                    $("a").removeClass("WColor");
+                }
+                else {
+                    $("header").css("background", "");
+                    $("a").removeClass("BColor");
+                    $("a").addClass("WColor");
+                }
+            })
+        })
+    </script>
 </head>
+
 <body>
     <div id="BG">
         <header>
             <a href="#" class="logo"><img src="./img/logo.png" alt="logo"></a>
-            
+
             <ul class="menubar">
                 <li>
                     <a href="#">브랜드</a>
-                    </li>
-                    <li>
-                        <a href="#">분양</a>
-                    </li>
-                    <li>
-                        <a href="#">마이홈</a>
-                    </li>
-                    <li>
-                        <a href="#">드림하우스 갤러리</a>
-                    </li>
-                </ul>
-        
-                <ul class="sidebar">
-                    <li>
-                        <a href="#">로그인</a>
-                    </li>
-                    <li>
-                        <a href="#">퍼스트스테이</a>
-                    </li>
-                    <li>
-                        <a href="#">e편한세상 찾기</a>
-                    </li>
-                </ul>
-                
-            </header>
+                </li>
+                <li>
+                    <a href="#">분양</a>
+                </li>
+                <li>
+                    <a href="#">마이홈</a>
+                </li>
+                <li>
+                    <a href="#">드림하우스 갤러리</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar">
+                <li>
+                    <a href="#">로그인</a>
+                </li>
+                <li>
+                    <a href="#">퍼스트스테이</a>
+                </li>
+                <li>
+                    <a href="#">e편한세상 찾기</a>
+                </li>
+            </ul>
+
+        </header>
     </div>
     <div id="vdo">
-        <video  preload="auto" autoplay="true" loop="loop" muted="muted" src="https://elife.co.kr/common/front/images/main/daelim_new.mp4">
-        <source src="https://elife.co.kr/common/front/images/main/daelim_new.mp4">
+        <video preload="auto" autoplay="true" loop="loop" muted="muted"
+            src="https://elife.co.kr/common/front/images/main/daelim_new.mp4">
+            <source src="https://elife.co.kr/common/front/images/main/daelim_new.mp4">
         </video>
     </div>
+    <h1>최고의 삶을 누릴 수 있는 최상의 주거 경험</h1>
+    <div class="main">
+        <a href="#" class="item"><div></div></a>
+        <a href="#" class="item"><div></div></a>
+        <a href="#" class="item"><div></div></a>
+        <a href="#" class="item"><div></div></a>
+        <a href="#" class="item"><div></div></a>
+        <a href="#" class="item"><div></div></a>
+    </div>
 </body>
+
 </html>
